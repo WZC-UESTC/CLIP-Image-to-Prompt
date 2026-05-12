@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.dll
+*.egg
+*.egg-info/
+dist/
+build/
+
+# 虚拟环境
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# 项目生成的文件
+uploaded_images/
+examples/
+outputs/
+*.csv
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 模型文件（太大，不提交）
+*.bin
+*.pth
+*.pt
+models/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# 配置文件（包含敏感信息）
+.env
+config.local.py
