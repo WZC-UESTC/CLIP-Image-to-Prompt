@@ -1,0 +1,78 @@
+================================================================================
+RoPE Base Frequency Experiment - Comprehensive Report
+================================================================================
+
+Total samples: 82783
+
+------------------------------------------------------------
+1. Performance Statistics
+------------------------------------------------------------
+
+Configuration             Mean       Std        Median     Min        Max       
+----------------------------------------------------------------------
+Baseline (Greedy)         0.2894     0.0501     0.2949     0.0054     0.4678    
+Beam Search (k=3)         0.2905     0.0537     0.2974     0.0228     0.4741    
+RoPE (base=5000)          0.2569     0.0589     0.2634     -0.0299    0.4558    
+RoPE (base=10000)         0.2569     0.0588     0.2634     -0.0067    0.4543    
+RoPE (base=20000)         0.2570     0.0584     0.2632     0.0024     0.4514    
+RoPE (base=100000)        0.2570     0.0587     0.2634     -0.0135    0.4509    
+
+------------------------------------------------------------
+2. Improvement over Baseline
+------------------------------------------------------------
+
+Beam Search (k=3):
+  Mean improvement: +0.36%
+  Better samples: 38035/82783 (45.9%)
+
+RoPE (base=5000):
+  Mean improvement: -11.26%
+  Better samples: 20946/82783 (25.3%)
+
+RoPE (base=10000):
+  Mean improvement: -11.23%
+  Better samples: 20906/82783 (25.3%)
+
+RoPE (base=20000):
+  Mean improvement: -11.19%
+  Better samples: 20831/82783 (25.2%)
+
+RoPE (base=100000):
+  Mean improvement: -11.20%
+  Better samples: 20979/82783 (25.3%)
+
+------------------------------------------------------------
+3. Best Configuration Analysis
+------------------------------------------------------------
+
+🏆 Best RoPE configuration: RoPE (base=20000)
+  RoPE vs Beam Search improvement: -11.50%
+
+------------------------------------------------------------
+4. Statistical Significance
+------------------------------------------------------------
+
+Beam Search (k=3):
+  t-statistic: -6.2417
+  p-value: 0.000000
+  Significant: Yes
+
+RoPE (base=5000):
+  t-statistic: 167.0325
+  p-value: 0.000000
+  Significant: Yes
+
+RoPE (base=10000):
+  t-statistic: 166.7211
+  p-value: 0.000000
+  Significant: Yes
+
+RoPE (base=20000):
+  t-statistic: 167.1787
+  p-value: 0.000000
+  Significant: Yes
+
+RoPE (base=100000):
+  t-statistic: 166.5879
+  p-value: 0.000000
+  Significant: Yes

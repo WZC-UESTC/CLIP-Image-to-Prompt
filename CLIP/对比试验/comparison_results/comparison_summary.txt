@@ -1,0 +1,49 @@
+================================================================================
+BLIP + Language Model Comparison Summary
+================================================================================
+
+
+Image: sunset.jpg
+------------------------------------------------------------
+  BLIP Input:    a sunset over the ocean
+  T5 Output:     a beautiful sunset casting golden light across the ocean horizon
+  BART Output:   The sun sets over the calm ocean, painting the sky in warm orange and pink hues.
+  GPT2 Output:   a stunning sunset over the ocean with vibrant colors reflecting on the water
+  CLIP-Int. Out: a breathtaking sunset over the ocean, golden hour, dramatic sky, warm colors, peaceful atmosphere, high resolution, beautiful landscape photography
+
+
+Image: cat.jpg
+------------------------------------------------------------
+  BLIP Input:    a cat sitting on a windowsill
+  T5 Output:     a domestic cat resting on a window ledge, looking outside
+  BART Output:   A cat is sitting on a windowsill, gazing through the glass at the outside world.
+  GPT2 Output:   a cute cat sitting on a windowsill, looking outside at the birds
+  CLIP-Int. Out: a cute domestic cat sitting on a windowsill, natural lighting, looking outside, curious expression, detailed fur texture, indoor setting, cozy atmosphere
+
+
+Image: dog.jpg
+------------------------------------------------------------
+  BLIP Input:    a dog running on grass
+  T5 Output:     a canine running across a green field with energy
+  BART Output:   A dog is running playfully on the green grass field.
+  GPT2 Output:   a happy dog running on green grass in a sunny park
+  CLIP-Int. Out: a happy golden retriever running on green grass, sunny day, motion blur, energetic pose, fluffy coat, outdoor park setting, vibrant colors
+
+
+Image: building.jpg
+------------------------------------------------------------
+  BLIP Input:    a tall building in the city
+  T5 Output:     a skyscraper towering over an urban landscape
+  BART Output:   A tall building stands prominently in the city skyline.
+  GPT2 Output:   a modern skyscraper in the middle of a busy city
+  CLIP-Int. Out: a modern skyscraper in downtown city, urban architecture, glass facade, cloudy sky, cityscape background, professional photography, sharp details
+
+
+Image: food.jpg
+------------------------------------------------------------
+  BLIP Input:    a plate of food on a table
+  T5 Output:     a meal arranged on a dining table with various dishes
+  BART Output:   A plate of delicious food is placed on the wooden table.
+  GPT2 Output:   a plate of fresh food on a wooden table, ready to eat
+  CLIP-Int. Out: a delicious plate of gourmet food, wooden table setting, appetizing presentation, fresh ingredients, natural lighting, food photography, vibrant colors
+

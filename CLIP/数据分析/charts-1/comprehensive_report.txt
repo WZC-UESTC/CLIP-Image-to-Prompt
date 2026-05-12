@@ -1,0 +1,78 @@
+================================================================================
+RoPE Base Frequency Experiment - Comprehensive Report
+================================================================================
+
+Total samples: 207
+
+------------------------------------------------------------
+1. Performance Statistics
+------------------------------------------------------------
+
+Configuration             Mean       Std        Median     Min        Max       
+----------------------------------------------------------------------
+Baseline (Greedy)         0.2903     0.0478     0.2988     0.0964     0.3931    
+Beam Search (k=3)         0.2904     0.0487     0.2917     0.1389     0.4104    
+RoPE (base=5000)          0.2854     0.0515     0.2891     0.1389     0.4104    
+RoPE (base=10000)         0.2861     0.0509     0.2893     0.1389     0.4104    
+RoPE (base=20000)         0.2851     0.0518     0.2891     0.1356     0.4104    
+RoPE (base=100000)        0.2839     0.0530     0.2891     0.0987     0.4104    
+
+------------------------------------------------------------
+2. Improvement over Baseline
+------------------------------------------------------------
+
+Beam Search (k=3):
+  Mean improvement: +0.05%
+  Better samples: 96/207 (46.4%)
+
+RoPE (base=5000):
+  Mean improvement: -1.66%
+  Better samples: 92/207 (44.4%)
+
+RoPE (base=10000):
+  Mean improvement: -1.43%
+  Better samples: 92/207 (44.4%)
+
+RoPE (base=20000):
+  Mean improvement: -1.76%
+  Better samples: 90/207 (43.5%)
+
+RoPE (base=100000):
+  Mean improvement: -2.18%
+  Better samples: 90/207 (43.5%)
+
+------------------------------------------------------------
+3. Best Configuration Analysis
+------------------------------------------------------------
+
+🏆 Best RoPE configuration: RoPE (base=10000)
+  RoPE vs Beam Search improvement: -1.48%
+
+------------------------------------------------------------
+4. Statistical Significance
+------------------------------------------------------------
+
+Beam Search (k=3):
+  t-statistic: -0.0540
+  p-value: 0.956983
+  Significant: No
+
+RoPE (base=5000):
+  t-statistic: 1.5672
+  p-value: 0.118595
+  Significant: No
+
+RoPE (base=10000):
+  t-statistic: 1.3747
+  p-value: 0.170727
+  Significant: No
+
+RoPE (base=20000):
+  t-statistic: 1.6403
+  p-value: 0.102462
+  Significant: No
+
+RoPE (base=100000):
+  t-statistic: 1.9820
+  p-value: 0.048813
+  Significant: Yes
