@@ -76,13 +76,21 @@
 ### 📁 项目结构
 CLIP-Image-to-Prompt/
 ├── visual_demo_fixed.py      # 主程序（动态演示）
+
 ├── visual_demo.py             # 原始演示程序
+
 ├── blip_caption.py            # BLIP 模型模块
+
 ├── clip_blip_integration.py   # CLIP-BLIP 集成模块
+
 ├── requirements.txt           # 依赖清单
+
 ├── .gitignore                 # Git 忽略文件
+
 ├── uploaded_images/           # 上传图片保存目录
+
 ├── examples/                  # 示例图片
+
 └── models/                    # 本地模型文件
 ### 环境要求
 
@@ -141,9 +149,13 @@ repetition_penalty=1.2  # 重复惩罚
 <img width="2560" height="1398" alt="8dc5e30bbf940f8799f726ad875cc81c" src="https://github.com/user-attachments/assets/6943f575-2f6c-4740-a205-de552c9b7317" />
 👥 团队信息
 角色	姓名
+
 项目负责人	叶又豪
+
 团队成员	王子琛
+
 团队成员	周恒凯
 团队成员	刘美丹珠
 团队成员	陈宝仪
+
 指导教师	陈娟（副教授）
