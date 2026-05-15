@@ -73,19 +73,6 @@
 ---
 
 ## 🚀 快速开始
-
-### 环境要求
-
-- Python 3.8 或更高版本
-- pip 包管理器
-
-### 安装步骤
-
-#### 1. 克隆仓库
-
-```bash
-git clone https://github.com/WZC-UESTC/CLIP-Image-to-Prompt.git
-cd CLIP-Image-to-Prompt
 ### 📁 项目结构
 CLIP-Image-to-Prompt/
 ├── visual_demo_fixed.py      # 主程序（动态演示）
@@ -97,3 +84,66 @@ CLIP-Image-to-Prompt/
 ├── uploaded_images/           # 上传图片保存目录
 ├── examples/                  # 示例图片
 └── models/                    # 本地模型文件
+### 环境要求
+
+- Python 3.8 或更高版本
+- pip 包管理器
+
+
+### 安装步骤
+
+#### 1. 克隆仓库
+
+
+git clone https://github.com/WZC-UESTC/CLIP-Image-to-Prompt.git
+cd CLIP-Image-to-Prompt
+
+#### 2.📖 使用说明
+1. 启动系统
+bash
+python visual_demo_fixed.py
+2. 上传图片
+点击"上传图片"选择本地图片
+
+或点击示例图片快速体验
+
+3. 开始处理
+点击"开始处理"按钮，观看动态演示：
+
+📸 步骤1/5：图片加载与预处理
+
+🔍 步骤2/5：图像特征提取
+
+🔄 步骤3/5：CLIP 特征比对
+
+📝 步骤4/5：文本生成（逐词动画）
+
+✨ 步骤5/5：结果融合与输出
+
+4. 查看结果
+系统会生成最终的提示词，可直接复制使用。
+
+🔧 高级配置
+修改生成参数
+编辑 blip_caption.py 中的参数：
+
+python
+#### 生成参数配置
+max_length=20      # 最大生成长度
+num_beams=5        # 束搜索宽度
+temperature=0.8    # 温度参数（0.5-1.2）
+repetition_penalty=1.2  # 重复惩罚
+自定义标签库
+编辑 clip_blip_integration.py 中的 load_tag_library 方法，添加自定义标签。
+
+### 📈 成果展示
+示例输出
+<img width="2560" height="1398" alt="8dc5e30bbf940f8799f726ad875cc81c" src="https://github.com/user-attachments/assets/6943f575-2f6c-4740-a205-de552c9b7317" />
+👥 团队信息
+角色	姓名
+项目负责人	叶又豪
+团队成员	王子琛
+团队成员	周恒凯
+团队成员	刘美丹珠
+团队成员	陈宝仪
+指导教师	陈娟（副教授）
